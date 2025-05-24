@@ -2,16 +2,19 @@
 using namespace std;
 int main()
 {
-    int a;
+    int a,t=0;
     cin>>a;
-    if(a>0&&a<100){
-    if(a>80){
-        cout << "Well Done!" << endl;
-    }
-    else{
-         cout << "Try Again!" << endl;
-    }
-    }
+    for(int i=0;i<a;i++){
+        int s,r=0;
+        for(int i=0;i<6;i++){
 
+            cin>>s;
+            r+=s; 
+        }
+        cout << r << endl;
+        t+=r;
+    }
+    cout << "The Total Run is:" << t << endl;
     return 0;
+
 }
